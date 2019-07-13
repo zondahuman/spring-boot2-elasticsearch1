@@ -1,0 +1,24 @@
+server:
+        port: 6000  #配置端口
+        address : localhost
+        connecyion.timeout: 6000
+        tomcat.max-threads: 0
+        tomcat.uri-encoding: UTF-8
+        servlet:
+                  session:
+                            timeout: 30
+
+spring:
+      application:
+                    name: elasticsearch-data
+        data:
+              elasticsearch:
+                              cluster-name: elasticsearch
+                              cluster-nodes: 10.96.91.192:9300
+                              repositories:
+                                            enable: true
+logging:
+        level:
+              alibaba:
+                      druid: debug
+
